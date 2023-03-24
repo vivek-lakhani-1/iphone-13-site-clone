@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>iphone_shpping</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="iphonelog.png" alt="" class="ilogo">
+            <nav>
+                <ul id = "menulist">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="">iphone11</a></li>
+                    <li><a href="#">iphone12</a></li>
+                    <li><a href="#">iphone13</a></li>
+                </ul>
+            </nav>
+            <img src="three.png" alt="" class="ithree" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col_1">
+                <h2>iPhone 13 </h2>
+                <h3>Your new superpower</h3>
+                <p>Ram/Storage : 8GB/256GB</p>
+                <h4>$1000</h4>
+                <button type="button">Buy Now <img  src="arrow.png" alt=""></button>
+            </div>
+
+            <div class="col_2">
+                <img src="i.png" class="iphone" id="iphone">
+                <div class="colorbox"></div>
+                <div class="add_bt">
+                    <img src="add.png" alt="">
+                    <p>ADD</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <img src="fb.png" alt="">
+            <img src="ig.png" alt="">
+            <img src="tw.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        var menulist = document.getElementById("menulist")
+
+        menulist.style.maxHeight="0px"
+        function togglemenu(){
+            if(menulist.style.maxHeight=="0px"){
+                menulist.style.maxHeight="130px";
+                
+            }
+            else{
+                menulist.style.maxHeight="0px"
+                
+            }
+
+
+        }
+    </script>
+</body>
+</html>
